@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 import Test from './Test';
@@ -20,9 +21,12 @@ function App() {
           Learn React
         </a>
       </header>
-      <Test />
+      <Test 
+        name="Sannu"
+        email="asdasd@ajsd"
+      />
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);

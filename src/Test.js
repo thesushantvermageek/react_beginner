@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Test() {
+function Test(props) {
   return (
     <p className="App-header">
-        Hey guys, What's up !!
+        Hey {props.name},{props.email}, What's up !!
     </p>
   );
 }
